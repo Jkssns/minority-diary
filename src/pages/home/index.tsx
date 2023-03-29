@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 import './index.scss';
 type StateType = {
@@ -97,6 +98,9 @@ class Diary extends React.Component<any, StateType> {
         const {dataSource, openTranslate, openFirst} = this.state;
         return (
             <div className="book_container">
+                <div style={{position: 'absolute', top: '20px', left: '20px', color: 'red'}}>
+                    <Link to={{ pathname: '/route2', state: { id: 2} }} >12341234</Link>
+                </div>
                 <div className="v-center"></div>
                 <div id="container">
                     <div className={`book ${openTranslate ? 'openTranslate' : ''}`}>
