@@ -1,0 +1,390 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+ html,
+ body,
+ div,
+ span,
+ applet,
+ object,
+ iframe,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p,
+ blockquote,
+ pre,
+ a,
+ abbr,
+ acronym,
+ address,
+ big,
+ cite,
+ code,
+ del,
+ dfn,
+ em,
+ img,
+ ins,
+ kbd,
+ q,
+ s,
+ samp,
+ small,
+ strike,
+ strong,
+ sub,
+ sup,
+ tt,
+ var,
+ b,
+ u,
+ i,
+ center,
+ dl,
+ dt,
+ dd,
+ ol,
+ ul,
+ li,
+ fieldset,
+ form,
+ label,
+ legend,
+ table,
+ caption,
+ tbody,
+ tfoot,
+ thead,
+ tr,
+ th,
+ td,
+ article,
+ aside,
+ canvas,
+ details,
+ embed,
+ figure,
+ figcaption,
+ footer,
+ header,
+ menu,
+ nav,
+ output,
+ ruby,
+ section,
+ summary,
+ time,
+ mark,
+ audio,
+ video,
+ input {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font-weight: normal;
+   vertical-align: baseline;
+ }
+ 
+ html,
+ body,
+ #root {
+   width: 100%;
+   height: 100%;
+   font-size: 16px;
+ }
+ 
+ /* HTML5 display-role reset for older browsers */
+ article,
+ aside,
+ details,
+ figcaption,
+ figure,
+ footer,
+ header,
+ menu,
+ nav,
+ section {
+   display: block;
+ }
+ 
+ body {
+   line-height: 1;
+ }
+ 
+ blockquote,
+ q {
+   quotes: none;
+ }
+ 
+ blockquote:before,
+ blockquote:after,
+ q:before,
+ q:after {
+   content: none;
+ }
+ 
+ table {
+   border-collapse: collapse;
+   border-spacing: 0;
+ }
+ 
+ /* custom */
+ a {
+   /*color: #7e8c8d;*/
+   text-decoration: none;
+   -webkit-backface-visibility: hidden;
+ }
+ 
+ li {
+   list-style: none;
+ }
+ 
+ ::-webkit-scrollbar {
+   width: 5px;
+   height: 5px;
+ }
+ 
+ .clearfix:after {
+   content: '.';
+   display: block;
+   clear: both;
+   visibility: hidden;
+   height: 0;
+   font-size: 0;
+ }
+ 
+ ::-webkit-scrollbar-track-piece {
+   -webkit-border-radius: 3px;
+ }
+ 
+ ::-webkit-scrollbar-thumb:vertical {
+   height: 5px;
+   background-color: #e9e9e9;
+   -webkit-border-radius: 3px;
+ }
+ 
+ ::-webkit-scrollbar-thumb:horizontal {
+   width: 5px;
+   background-color: #e9e9e9;
+   -webkit-border-radius: 3px;
+ }
+ 
+ .version_html {
+   width: 100%;
+   height: 100%;
+ }
+ 
+ .version_html head {
+   display: none;
+ }
+ 
+ .version_html body {
+   margin: 8px;
+   line-height: 1.12;
+ }
+ 
+ .version_html button,
+ .version_html textarea,
+ .version_html input,
+ .version_html object,
+ .version_html select {
+   display: inline-block;
+ }
+ 
+ .version_html ol,
+ .version_html ul,
+ .version_html dir,
+ .version_html menu,
+ .version_html dd {
+   margin-left: 40px;
+ }
+ 
+ .version_html i,
+ .version_html cite,
+ .version_html em,
+ .version_html var,
+ .version_html address {
+   font-style: italic;
+ }
+ 
+ .version_html html,
+ .version_html body,
+ .version_html div,
+ .version_html ol,
+ .version_html p,
+ .version_html ul,
+ .version_html h1,
+ .version_html h2,
+ .version_html h3,
+ .version_html h4,
+ .version_html h5,
+ .version_html h6,
+ .version_html address,
+ .version_html blockquote,
+ .version_html form,
+ .version_html dd,
+ .version_html dl,
+ .version_html dt,
+ .version_html fieldset,
+ .version_html frame,
+ .version_html frameset,
+ .version_html noframes,
+ .version_html center,
+ .version_html dir,
+ .version_html hr,
+ .version_html menu,
+ .version_html pre {
+   color: #000;
+   display: block;
+ }
+ 
+ .version_html h1 {
+   font-size: 2em;
+   margin: 0.67em 0;
+ }
+ 
+ .version_html h2 {
+   font-size: 1.5em;
+   margin: 0.75em 0;
+ }
+ 
+ .version_html h3 {
+   font-size: 1.17em;
+   margin: 0.83em 0;
+ }
+ 
+ .version_html h4,
+ .version_html p,
+ .version_html blockquote,
+ .version_html ul,
+ .version_html fieldset,
+ .version_html form,
+ .version_html ol,
+ .version_html dl,
+ .version_html dir,
+ .version_html menu {
+   margin: 1.12em 0;
+ }
+ 
+ .version_html li {
+   display: list-item;
+   list-style: inherit;
+ }
+ 
+ .version_html ul {
+   list-style-type: disc;
+   margin-left: 20px;
+ }
+ 
+ .version_html ol {
+   list-style-type: decimal;
+   margin-left: 20px;
+ }
+ 
+ .version_html h5 {
+   font-size: 0.83em;
+   margin: 1.5em 0;
+ }
+ 
+ .version_html h6 {
+   font-size: 0.75em;
+   margin: 1.67em 0;
+ }
+ 
+ .version_html h1,
+ .version_html h2,
+ .version_html h3,
+ .version_html h4,
+ .version_html h5,
+ .version_html h6,
+ .version_html b,
+ .version_html strong {
+   font-weight: bolder;
+ }
+ 
+ .version_html table {
+   color: #000;
+   display: table;
+ }
+ 
+ .version_html tr {
+   display: table-row;
+   border: inherit;
+   vertical-align: inherit;
+ }
+ 
+ .version_html thead {
+   display: table-header-group;
+ }
+ 
+ .version_html tbody {
+   display: table-row-group;
+   vertical-align: middle;
+   border: inherit;
+ }
+ 
+ .version_html tfoot {
+   display: table-footer-group;
+ }
+ 
+ .version_html col {
+   display: table-column;
+ }
+ 
+ .version_html colgroup {
+   display: table-column-group;
+ }
+ 
+ .version_html td,
+ .version_html th {
+   display: table-cell;
+   border: inherit;
+ }
+ 
+ .version_html caption {
+   display: table-caption;
+ }
+ 
+ .version_html th {
+   font-weight: bolder;
+   text-align: center;
+ }
+ 
+ .version_html caption {
+   text-align: center;
+ }
+ 
+ .version_html table {
+   border-top-width: 1px;
+   border-right-width: 1px;
+   border-bottom-width: 1px;
+   border-left-width: 1px;
+   border-color: grey;
+   border-style: solid;
+   display: table;
+   border-spacing: 2px;
+   width: 100% !important;
+ }
+ 
+ .version_html thead,
+ .version_html tbody,
+ .version_html tfoot {
+   vertical-align: middle;
+ }
+ 
+ .version_html td,
+ .version_html th {
+   vertical-align: inherit;
+ }
+ 
+ .version_html a {
+   text-decoration: royalblue;
+   -webkit-backface-visibility: inherit;
+ }
+ 
