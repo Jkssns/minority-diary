@@ -99,7 +99,12 @@ class Diary extends React.Component<any, StateType> {
         return (
             <div className="book_container">
                 <div style={{position: 'absolute', top: '20px', left: '20px', color: 'red'}}>
-                    <Link to={{ pathname: '/route2', state: { id: 2} }} >12341234</Link>
+                    {/* state传参，相当于vue的编程式params传参 */}
+                    {/* <Link to='/route2' state={{ id: 2}} >跳转页面</Link> */}
+                    {/* search传参，相当于vue的query传参 */}
+                    <Link to='/route2?id=2'>跳转页面</Link>
+                    {/* params传参，相当于vue的声明式params传参 */}
+                    {/* 在路由文件里声明/route2/:id */}
                 </div>
                 <div className="v-center"></div>
                 <div id="container">
